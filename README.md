@@ -32,7 +32,7 @@ python3 mainWlan.py -t 认证类型（ipv6&ipv4、ipv6两种类型可选，因�
 ```
 或者
 ```cmd
-python mainLan.py -t 认证类型
+python mainWLan.py -t 认证类型
 ```
 
 ### 4. 使用WIFI登出网关
@@ -41,5 +41,5 @@ python3 mainWlan.py --logout
 ```
 或者
 ```cmd
-python mainLan.py --logout
+python mainWLan.py --logout
 ```
