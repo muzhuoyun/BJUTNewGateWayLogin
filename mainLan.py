@@ -28,9 +28,11 @@ if __name__ == '__main__':
     args = parser.parse_args()
     try:
         loginLan('ipv6&ipv4')
-        logoutLan()
-        if not args.logout:
-            loginLan(args.ipType)
+        r = logoutLan()
+        if args.logout:
+            print(r)
+        else:
+            print(loginLan(args.ipType))
     except SSLError as e:
         print("[SSL] 证书校验失败：", e)
     except Timeout as e:

@@ -1,5 +1,5 @@
-UserAccount = ''
-UserPassWord = ''
+UserAccount = '替换为学号'
+UserPassWord = '替换为密码'
 
 from utils import *
 
