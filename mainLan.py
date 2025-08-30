@@ -16,13 +16,13 @@ def loginLan(v46):
     loadConfig()
     if CT.ipType == 'ipv6&ipv4':
         checkV6()
-    login()
+    return login()
 
 def logoutLan():
     initLgn()
     loadConfig()
     checkV6()
-    logout()
+    return logout()
 
 if __name__ == '__main__':
     args = parser.parse_args()

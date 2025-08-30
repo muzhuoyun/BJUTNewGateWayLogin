@@ -16,13 +16,13 @@ def loginWlan(v46):
         CT.url = CT.urlDict['v46Wlan']
     initLgn()
     loadConfig()
-    login()
+    return login()
 
 def logoutWlan():
     CT.url = CT.urlDict['v46Wlan']
     initLgn()
     loadConfig()
-    logout()
+    return logout()
 
 if __name__ == '__main__':
     args = parser.parse_args()

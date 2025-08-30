@@ -69,7 +69,7 @@ def login():
     else:
         loginReady = CT.createWlanLoginReady()
     loginUrl = CT.getPortalApi() + '/login'
-    return getJsonP(loginUrl, wrap(loginReady))
+    return getJsonP(loginUrl, wrap(loginReady))['msg']
 
 def logout():
     if 'https' in CT.url:
@@ -77,5 +77,5 @@ def logout():
     else:
         logoutReady = CT.createWlanLogoutReady()
     logoutUrl = CT.getPortalApi() + '/logout'
-    return getJsonP(logoutUrl, wrap(logoutReady))
+    return getJsonP(logoutUrl, wrap(logoutReady))['msg']
 
