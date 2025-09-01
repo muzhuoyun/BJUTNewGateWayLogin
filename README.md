@@ -26,7 +26,7 @@ python3 mainLan.py --logout
 python mainLan.py --logout
 ```
 
-### 4. 使用WIFI登录网关
+### 4. 在宿舍使用WIFI登录网关
 ```shell
 python3 mainWlan.py -t 认证类型（ipv6&ipv4、ipv6两种类型可选，因为暂时没有找到ipv4认证的接口或者方案。）
 ```
@@ -35,7 +35,7 @@ python3 mainWlan.py -t 认证类型（ipv6&ipv4、ipv6两种类型可选，因�
 python mainWLan.py -t 认证类型
 ```
 
-### 4. 使用WIFI登出网关
+### 5. 在宿舍使用WIFI登出网关
 ```shell
 python3 mainWlan.py --logout
 ```
